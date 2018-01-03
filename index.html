@@ -7,6 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+      });
+    </script>
   </head>
   <body>
     <div class="sticky-top float-right" style="background-color: #e0e0e000">
@@ -230,6 +235,39 @@
       <hr/>
       <div class="row">
         <div class="col">
+          ??Click this
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modd">Open a modal</button>
+          <div class="modal fade" id="modd">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Hi</h4>
+                  <button type="button" data-dismiss="modal" class="close">&cross;</button>
+                </div>
+                <div class="modal-body">
+                  General Kenobi?<br/>Hello there
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip(); 
+            });
+          </script>
+          <a href="#" data-toggle="tooltip" data-placement="right" title="Zerten Dorquin">Hover over me</a>
+          <script>$(document).ready(function(){
+              $('[data-toggle="popover"]').popover(); 
+          });
+          </script>
+          <a href="#" data-toggle="popover" title="Popover here" data-trigger="hover" data-content="Content for the popover goes here. You want to say something?">:)</a>
+        </div>
+        <div class="col">
           <div class="carousel slide" id="car-demo" data-ride="carousel">
             <ul class="carousel-indicators">
               <li target="#car-demo" data-slide-to="0" class="active"></li>
@@ -238,21 +276,21 @@
             </ul>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img1.jpg" width="720px" height="500px">
+              <img src="img1.jpg" style="max-width: 600px; max-height: 416px;">
               <div class="carousel-caption">
                 <h3>Duh</h3>
                 <p>Qwerty mkod pol</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img2.jpg" width="720px" height="500px">
+              <img src="img2.jpg" style="max-width: 600px; max-height: 416px;">
               <div class="carousel-caption">
                 <h3>Lop</h3>
                 <p>Kolp mkod pol</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img3.jpg" width="720px" height="500px">
+              <img src="img3.jpg" style="max-width: 600px; max-height: 416px;">
               <div class="carousel-caption">
                 <h3>Lok</h3>
                 <p>Lmon posei</p>
@@ -265,7 +303,8 @@
           <a class="carousel-control-next" href="#car-demo" data-slide="next">
             <span class="carousel-control-next-icon"></span>
           </a>
-        </div>
+        </div>        
+        
       </div>
     </div>
 
