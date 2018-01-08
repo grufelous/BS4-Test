@@ -12,6 +12,11 @@
         $('[data-toggle="tooltip"]').tooltip(); 
       });
     </script>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="sticky-top float-right" style="background-color: #e0e0e000">
@@ -274,7 +279,7 @@
       </div>
       <hr/>
       <div class="row mx-auto">
-        <div class="col-xl-6">
+        <div class="col-6">
           <h1 class="display-4">Modals and tooltips and popovers</h1>
           Click this
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modd">Open a modal</button>
@@ -295,7 +300,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-6">
           <script>
             $(document).ready(function(){
               $('[data-toggle="tooltip"]').tooltip(); 
@@ -310,20 +315,17 @@
         </div>              
       </div>
       <hr/>
-      <div class="row mx-auto" data-spy="scroll" data-target="#spy-nav">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-          <ul class="navbar-nav">
-            <li><a href="#panel1">Panel One</a></li>
-            <li><a href="#panel2">Panel v2.0</a></li>
-            <li><a href="#panel3">Panel Reloaded</a></li>
+      <div class="row" data-spy="scroll" data-target="#spy-nav">
+        <nav class="col-4" id="spy">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#panel1" class="nav-link active">Panel One</a></li>
+            <li class="nav-item"><a href="#panel2" class="nav-link">Panel v2.0</a></li>
+            <li class="nav-item"><a href="#panel3" class="nav-link">Panel Reloaded</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
   </body>
 </html>
